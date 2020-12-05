@@ -1,13 +1,9 @@
-import add from "./pages/lib"
 import renderHome from "./pages/home"
 import renderContact from "./pages/contact";
 import renderMenu from "./pages/menu";
 import renderNav from "./components/header";
-import renderFooter from "./components/footer";
-import events from "./functions/events"
-
-const result = add(4, 4);
-console.log(result);
+import events from "./functions/events";
+import "./assets/style/style.css";
 
 function renderPage(currentPage){
 

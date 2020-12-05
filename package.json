@@ -19,6 +19,8 @@
   },
   "homepage": "https://github.com/RaminMammadzada/js-restaurant-page#readme",
   "devDependencies": {
+    "css-loader": "^5.0.1",
+    "style-loader": "^2.0.0",
     "webpack": "^5.9.0",
     "webpack-cli": "^4.2.0"
   }

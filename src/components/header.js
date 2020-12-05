@@ -2,7 +2,9 @@ import events from "../functions/events";
 
 function renderNav() {
     const navItems = ["home", "menu", "contact"];
+    const headerTag = document.createElement("header");
     const $ul = document.createElement("ul");
+    headerTag.appendChild($ul);
     $ul.setAttribute("id", "headerNavbar")
 
     navItems.forEach((item) => {

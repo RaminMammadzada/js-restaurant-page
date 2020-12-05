@@ -1,5 +1,6 @@
 import renderNav from "../components/header";
 import renderFooter from "../components/footer";
+import "../assets/style/style.css";
 
 function renderMain() {
 
@@ -12,7 +13,9 @@ function renderMain() {
     const $main = document.createElement("div");
     $main.setAttribute("id", "main");
 
-    $main.innerHTML = "this is main part of contact page";
+    const $h1 = document.createElement("h1");
+    $h1.innerHTML = "this is main part of contact page";
+    $main.appendChild($h1);
 
     const $content = document.getElementById("content");
     $content.appendChild($main);
