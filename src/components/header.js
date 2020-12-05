@@ -2,14 +2,18 @@ import events from "../functions/events";
 
 function renderNav() {
     const navItems = ["home", "menu", "contact"];
-    const headerTag = document.createElement("header");
-    const $ul = document.createElement("ul");
-    headerTag.appendChild($ul);
-    $ul.setAttribute("id", "headerNavbar");
 
+    const $ul = document.createElement("ul");
+    $ul.setAttribute("id", "headerNavbar");
+    $ul.setAttribute("class", "navbar-nav mr-auto");
     navItems.forEach((item) => {
             const $li = document.createElement("li");
-            $li.innerHTML = item;
+            $li.setAttribute("class", "nav-item");
+            const $link = document.createElement("a");
+            $link.href = "#";
+            $link.setAttribute("class", "nav-link");
+            $link.innerHTML = item;
+            $li.appendChild($link);
             $ul.appendChild($li);
 
         }
@@ -17,9 +21,19 @@ function renderNav() {
 
     const $nav = document.createElement("nav");
     $nav.appendChild($ul);
+    $nav.setAttribute("class", "navbar navbar-expand-lg");
+
+    const $logo = document.createElement("h1");
+    $logo.innerHTML = "KEBAB HOUSE";
+
+
+    const headerTag = document.createElement("header");
+    headerTag.appendChild($logo);
+    headerTag.appendChild($nav);
+    headerTag.setAttribute("class", "d-flex justify-content-between py-4 px-4");
 
     const $content = document.getElementById("content");
-    $content.appendChild($nav);
+    $content.appendChild(headerTag);
 
     function getEventTarget(e) {
         e = e || window.event;

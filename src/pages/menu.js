@@ -12,11 +12,11 @@ function renderMain() {
     }
     const $main = document.createElement("div");
     $main.setAttribute("id", "main");
+    $main.setAttribute("class", "px-4 bg-info");
 
-    const $h1 = document.createElement("h1");
-    $h1.innerHTML = "this is main part of menu page";
-    $h1.setAttribute("class", "bg-info");
-    $main.appendChild($h1);
+    const $h2 = document.createElement("h2");
+    $h2.innerHTML = "this is main part of menu page";
+    $main.appendChild($h2);
 
     const $content = document.getElementById("content");
     $content.appendChild($main);

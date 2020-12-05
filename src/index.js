@@ -21,8 +21,8 @@ function renderPage(currentPage){
     }
 }
 
-document.getElementById("content")
-        .setAttribute("class", "container");
+// document.getElementById("content")
+//         .setAttribute("class", "container");
 
 events.on("currentPageChanged", renderPage);
 

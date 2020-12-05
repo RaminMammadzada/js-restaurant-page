@@ -1,5 +1,5 @@
 header {
-    background: mediumpurple;
+    background: #e3f2fd;
 }
 
 footer {
@@ -14,11 +14,23 @@ h1 {
     color: #d93033;
 }
 
-li {
-    color: #ffffff;
+h2 {
+    color: #f7f7f7;
 }
 
-ul {
-    background-color: #d93033;
+li:hover {
+    color: #37ff34;
+    background: #d93033;
 }
 
+li > a {
+    color: #ff012d;
+}
+
+li > a:hover {
+    color: #faffe7;
+}
+
+nav {
+    background-color: #e3f2fd;
+}
