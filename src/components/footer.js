@@ -1,6 +1,6 @@
 function renderFooter() {
 
-    const $footer = document.createElement("p");
+    const $footer = document.createElement("footer");
     $footer.innerHTML = "made by love by Ramin Mammadzada";
 
     const $content = document.getElementById("content");
