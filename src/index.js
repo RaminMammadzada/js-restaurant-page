@@ -4,6 +4,8 @@ import renderMenu from "./pages/menu";
 import renderNav from "./components/header";
 import events from "./functions/events";
 import "./assets/style/style.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import "popper.js";
 
 function renderPage(currentPage){
 
@@ -18,6 +20,9 @@ function renderPage(currentPage){
             renderContact();
     }
 }
+
+document.getElementById("content")
+        .setAttribute("class", "container");
 
 events.on("currentPageChanged", renderPage);
 

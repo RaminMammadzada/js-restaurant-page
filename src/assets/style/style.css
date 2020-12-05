@@ -6,15 +6,19 @@ footer {
     background-color: aqua;
 }
 
-#content {
-    background-color: yellow;
-    background: #aaff34;
-}
+/*#content {*/
+/*    background: #aaff34;*/
+/*}*/
 
 h1 {
     color: #d93033;
 }
 
 li {
-    color: #808080;
+    color: #ffffff;
 }
+
+ul {
+    background-color: #d93033;
+}
+

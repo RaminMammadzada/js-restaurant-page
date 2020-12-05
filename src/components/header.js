@@ -5,7 +5,7 @@ function renderNav() {
     const headerTag = document.createElement("header");
     const $ul = document.createElement("ul");
     headerTag.appendChild($ul);
-    $ul.setAttribute("id", "headerNavbar")
+    $ul.setAttribute("id", "headerNavbar");
 
     navItems.forEach((item) => {
             const $li = document.createElement("li");
