@@ -12,7 +12,7 @@ function renderMain() {
     }
     const $main = document.createElement("div");
     $main.setAttribute("id", "main");
-    $main.setAttribute("class", "px-4 bg-info");
+    $main.setAttribute("class", "px-4 bg-info main");
 
     const $h2 = document.createElement("h2");
     $h2.innerHTML = "this is main part of menu page";

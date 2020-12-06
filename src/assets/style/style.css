@@ -1,9 +1,20 @@
 header {
     background: #e3f2fd;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 footer {
     background-color: aqua;
+    /*position: absolute;*/
+    /*line-height: 60px;*/
+
+    position: fixed;
+    height: 60px;
+    bottom: 0;
+    width: 100%;
+    line-height: 60px;
 }
 
 /*#content {*/
@@ -33,4 +44,8 @@ li > a:hover {
 
 nav {
     background-color: #e3f2fd;
+}
+
+.main {
+    margin-top: 103px;
 }
