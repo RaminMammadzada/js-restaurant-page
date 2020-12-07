@@ -48,4 +48,18 @@ nav {
 
 .main {
     margin-top: 103px;
+    margin-bottom: 60px;
+}
+
+img{
+
+    overflow: hidden;
+
+    position: absolute;
+    left: auto;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    max-width: none;
+    min-height: 100%;
 }

@@ -3,9 +3,12 @@ import renderContact from "./pages/contact";
 import renderMenu from "./pages/menu";
 import renderNav from "./components/header";
 import events from "./functions/events";
-import "./assets/style/style.css";
+import "./style/style.css";
+import jQuery from "jquery";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "popper.js";
+
+window.$ = window.jQuery = jQuery;
 
 function renderPage(currentPage){
 
@@ -20,9 +23,6 @@ function renderPage(currentPage){
             renderContact();
     }
 }
-
-// document.getElementById("content")
-//         .setAttribute("class", "container");
 
 events.on("currentPageChanged", renderPage);
 

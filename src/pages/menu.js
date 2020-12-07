@@ -1,5 +1,6 @@
 import renderNav from "../components/header";
 import renderFooter from "../components/footer";
+import populateMenu from "../functions/populateMenu";
 
 
 function renderMain() {
@@ -14,9 +15,10 @@ function renderMain() {
     $main.setAttribute("id", "main");
     $main.setAttribute("class", "px-4 bg-info main");
 
-    const $h2 = document.createElement("h2");
-    $h2.innerHTML = "this is main part of menu page";
-    $main.appendChild($h2);
+
+
+    const $menu = populateMenu();
+    $main.appendChild($menu);
 
     const $content = document.getElementById("content");
     $content.appendChild($main);
