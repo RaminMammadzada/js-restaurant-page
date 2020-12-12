@@ -1,5 +1,5 @@
-import renderNav from "../components/header";
-import renderFooter from "../components/footer";
+import renderNav from "../components/shared/header";
+import renderFooter from "../components/shared/footer";
 import populateContact from "../components/contact/populateContact";
 // import populateHome from "../components/home/populateHome";
 

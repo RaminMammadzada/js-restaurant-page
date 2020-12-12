@@ -7,9 +7,6 @@ header {
 }
 
 footer {
-
-    /*position: absolute;*/
-    /*line-height: 60px;*/
     position: fixed;
     height: 60px;
     bottom: 0;
@@ -17,10 +14,6 @@ footer {
     line-height: 60px;
     color: #ffffff;
 }
-
-/*#content {*/
-/*    background: #aaff34;*/
-/*}*/
 
 h1 {
     color: #ffffff;
@@ -40,10 +33,6 @@ li > a {
 
 li > a:hover {
     color: #3a3333;
-}
-
-nav {
-    /* background-color: #e3f2fd; */
 }
 
 .main {
@@ -76,10 +65,6 @@ html {
     left: 31%;
     transform: translate(-50%, -50%);
 }
-
-/* .no-background-color {
-    background-color: transparent;
-} */
 
 .menu {
         margin-top: 70px;

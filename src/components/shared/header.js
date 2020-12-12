@@ -1,4 +1,4 @@
-import events from "../functions/events";
+import events from "../../functions/events";
 
 function renderNav() {
     const navItems = ["home", "menu", "contact"];

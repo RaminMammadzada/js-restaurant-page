@@ -1,7 +1,7 @@
 import renderHome from "./pages/home"
 import renderContact from "./pages/contact";
 import renderMenu from "./pages/menu";
-import renderNav from "./components/header";
+import renderNav from "./components/shared/header";
 import events from "./functions/events";
 import "jquery";
 import "popper.js";
