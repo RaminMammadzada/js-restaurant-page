@@ -5,8 +5,6 @@ Microverse JS Project #2 -> JS Restaurant Page
 # JS - Restaurant Page
 
 ![screenshot](./docs/images/screenshot_of_3_pages.png)
-[The screenshot of the home, manu and contact pages]
-
 
 
 In the project I created a simple restaurant website using JS6 and finished the following milestones:
