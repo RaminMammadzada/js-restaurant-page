@@ -21,7 +21,7 @@ function renderNav() {
 
     const $nav = document.createElement("nav");
     $nav.appendChild($ul);
-    $nav.setAttribute("class", "navbar navbar-expand-lg");
+    $nav.setAttribute("class", "navbar navbar-expand-sm");
 
     const $logo = document.createElement("h1");
     $logo.innerHTML = "KEBAB HOUSE";
@@ -30,9 +30,10 @@ function renderNav() {
     const headerTag = document.createElement("header");
     headerTag.appendChild($logo);
     headerTag.appendChild($nav);
-    headerTag.setAttribute("class", "d-flex justify-content-between py-4 px-4");
+    headerTag.setAttribute("class", "d-flex justify-content-between px-5 py-2");
 
     const $content = document.getElementById("content");
+    $content.setAttribute("class", "");
     $content.appendChild(headerTag);
 
     function getEventTarget(e) {

@@ -1,7 +1,6 @@
 import renderNav from "../components/header";
 import renderFooter from "../components/footer";
-import carousel from "../components/carousel";
-
+import populateHome from "../components/home/populateHome";
 
 function renderMain() {
 
@@ -11,13 +10,11 @@ function renderMain() {
     }
     const $main = document.createElement("div");
     $main.setAttribute("id", "main");
-    $main.setAttribute("class", "px-4 bg-info main");
+    $main.setAttribute("class", "main mt-10");
 
 
-    // create carousel
-    const $carouselDiv = carousel();
-    
-    $main.appendChild($carouselDiv);
+    // create home page
+    $main.appendChild(populateHome());
 
     const $content = document.getElementById("content");
     $content.appendChild($main);
@@ -26,7 +23,7 @@ function renderMain() {
 
 function renderHome() {
 
-
+    
     renderMain();
     renderFooter();
 

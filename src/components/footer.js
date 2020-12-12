@@ -1,8 +1,8 @@
 function renderFooter() {
 
     const $footer = document.createElement("footer");
-    $footer.setAttribute("class", "px-4");
-    $footer.innerHTML = "made by love by Ramin Mammadzada";
+    $footer.setAttribute("class", "px-1 d-flex justify-content-center align-items-center");
+    $footer.innerHTML = "Copyright © Kebab House";
 
     const $content = document.getElementById("content");
     $content.appendChild($footer);

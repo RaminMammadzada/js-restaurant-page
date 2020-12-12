@@ -1,4 +1,4 @@
-import menuItem from "../components/menuItem";
+import menuItem from './menuItem';
 
 const menuSection = (dishInSection) => {
 

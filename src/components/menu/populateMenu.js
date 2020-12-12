@@ -1,4 +1,4 @@
-import menuSection from "../components/menuSection";
+import menuSection from "./menuSection";
 
 const dishes = {
     meals: [

@@ -8,7 +8,6 @@ function renderMain() {
     if (document.getElementById("main") !== null){
         document.getElementById("main").outerHTML = "";
         document.querySelector("footer").outerHTML = "";
-
     }
 
     const $main = document.createElement("div");

@@ -20,14 +20,18 @@
   "homepage": "https://github.com/RaminMammadzada/js-restaurant-page#readme",
   "devDependencies": {
     "css-loader": "^5.0.1",
+    "file-loader": "^6.2.0",
     "style-loader": "^2.0.0",
     "webpack": "^5.9.0",
     "webpack-cli": "^4.2.0"
   },
   "dependencies": {
+    "@glidejs/glide": "^3.4.1",
     "bootstrap": "^4.5.3",
+    "image-webpack-loader": "^7.0.1",
     "jquery": "^3.5.1",
     "popper.js": "^1.16.1",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "swiper": "^6.3.5"
   }
 }

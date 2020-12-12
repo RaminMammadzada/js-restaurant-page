@@ -3,10 +3,14 @@ import renderContact from "./pages/contact";
 import renderMenu from "./pages/menu";
 import renderNav from "./components/header";
 import events from "./functions/events";
-import "./style/style.css";
-import jQuery from "jquery";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "jquery";
 import "popper.js";
+import "./style/style.css";
+
+
+import "jquery/dist/jquery.slim.min.js"
+import "popper.js/dist/popper.min.js";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 window.$ = window.jQuery = jQuery;
 
