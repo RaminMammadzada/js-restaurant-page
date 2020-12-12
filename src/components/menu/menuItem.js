@@ -18,7 +18,7 @@ function menuItem({name, ingredient, price}) {
 
     const $itemPrice = document.createElement("h4");
     $itemPrice.setAttribute("class", "text-light d-flex justify-content-end align-self-center");
-    $itemPrice.innerText = price;
+    $itemPrice.innerText = price + " $";
 
     $menuItem.appendChild($itemNamenAndIngredient);
     $menuItem.appendChild($itemPrice);

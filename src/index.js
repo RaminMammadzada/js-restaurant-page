@@ -31,6 +31,6 @@ function renderPage(currentPage){
 events.on("currentPageChanged", renderPage);
 
 renderNav();
-events.emit("currentPageChanged", "home");
+events.emit("currentPageChanged", "contact");
 
 

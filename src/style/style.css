@@ -90,3 +90,16 @@ html {
 .bg-gray1 {
     background-color: #494646
 }
+
+.contact {
+    margin-top: 370px;
+    margin-left: 150px;
+}
+
+#content {
+    height: 0px; 
+}
+
+.map-image {
+    transform: scale(0.2);
+}
