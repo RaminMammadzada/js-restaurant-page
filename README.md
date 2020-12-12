@@ -29,7 +29,7 @@ In this project I created a simple restaurant page using JS6 and finished the fo
 
 ## Live Demo
 
-[Live Demo Link](https://raminmammadzada.github.io/js-library/)
+[Live Demo Link](https://raminmammadzada.github.io/js-restaurant-page/)
 
 ## Getting Started
 
@@ -38,7 +38,7 @@ To get a local copy up and running follow these simple example steps.
 - Go into project folder `cd js-restaurant-page`
 - Run `npm install`
 - Run `npm run watch`
-- Go into src folde by writing  `cd src` and open `index.html` file using your favorite browser.
+- Go into `dist` folder by writing `cd dist` and open `index.html` file using your favorite browser.
 
 
 ## Authors
