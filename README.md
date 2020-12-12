@@ -1,12 +1,17 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-Microverse JS Project#2 -> JS Restaurant Page
+Microverse JS Project #2 -> JS Restaurant Page
 
 # JS - Restaurant Page
 
-In this project I created a simple restaurant page using JS6 and finished the following milestones:
+![screenshot](./docs/images/screenshot_of_3_pages.png)
+[The screenshot of the home, manu and contact pages]
 
-- [x] Miltestone 1 - Set up an HTML skeleton inside of dist/index.html with single <div id="content">.
+
+
+In the project I created a simple restaurant website using JS6 and finished the following milestones:
+
+- [x] Miltestone 1 - Set up an HTML skeleton inside of dist/index.html with single <div id="content">
 - [x] Miltestone 2 - Set the style, image file loaders with Webpack.
 - [x] Miltestone 3 - Create a bare-bones homepage for a restaurant with homepage, menu page and contact page.
 - [x] Miltestone 4 - Each module exports a function that creates element, adds the appropriate content and styles to that element and then appends it to the DOM.
@@ -15,16 +20,13 @@ In this project I created a simple restaurant page using JS6 and finished the fo
 - [x] Miltestone 7 - Implement PubSup pattern to populate specific pages on specific time.
 
 
-![screenshot](./images/screenshot.png)
-[The screenshot of the page]
-
 ## Built With
 
-- HTML/CSS
-- Webpack
-- npm
-- Github Actions
 - Javascript/ES6
+- npm
+- Webpack
+- HTML/CSS
+- Github Actions
 - Bootstrap
 
 ## Live Demo
