@@ -534,14 +534,14 @@ module.exports = function (list, options) {
 (() => {
 
 ;// CONCATENATED MODULE: ./src/components/shared/footer.js
-function renderFooter() {
+const renderFooter = () => {
   const $footer = document.createElement('footer');
   $footer.setAttribute('class', 'px-1 d-flex justify-content-center align-items-center');
   $footer.innerHTML = 'Copyright © Kebab House';
 
   const $content = document.getElementById('content');
   $content.appendChild($footer);
-}
+};
 
 /* harmony default export */ const footer = (renderFooter);
 ;// CONCATENATED MODULE: ./src/components/home/populateHome.js
@@ -564,7 +564,7 @@ const populateHome = () => {
 
 
 
-function renderMain() {
+const renderMain = () => {
   if (document.getElementById('main') !== null) {
     document.getElementById('main').outerHTML = '';
     document.querySelector('footer').outerHTML = '';
@@ -573,19 +573,18 @@ function renderMain() {
   $main.setAttribute('id', 'main');
   $main.setAttribute('class', 'main mt-10');
 
-
   // create home page
   $main.appendChild(home_populateHome());
 
   const $content = document.getElementById('content');
   $content.appendChild($main);
-}
+};
 
 
-function renderHome() {
+const renderHome = () => {
   renderMain();
   footer();
-}
+};
 
 /* harmony default export */ const home = (renderHome);
 ;// CONCATENATED MODULE: ./src/images/contact/img2.jpg
@@ -629,10 +628,8 @@ const populateContact = () => {
 ;// CONCATENATED MODULE: ./src/pages/contact.js
 
 
-// import populateHome from "../components/home/populateHome";
 
-
-function contact_renderMain() {
+const contact_renderMain = () => {
   if (document.getElementById('main') !== null) {
     document.getElementById('main').outerHTML = '';
     document.querySelector('footer').outerHTML = '';
@@ -642,34 +639,27 @@ function contact_renderMain() {
   $main.setAttribute('id', 'main');
   $main.setAttribute('class', 'px-4 main contact');
 
-
-  const $h2 = document.createElement('h2');
-  $h2.innerHTML = 'this is main part of contact page';
-
-
+  // create contact page
   $main.appendChild(contact_populateContact());
 
-
   const $content = document.getElementById('content');
-  // $content.setAttribute("class", "bg-dark");
   $content.appendChild($main);
-}
+};
 
 
-function renderContact() {
+const renderContact = () => {
   contact_renderMain();
   footer();
-}
+};
 
 /* harmony default export */ const contact = (renderContact);
 
 ;// CONCATENATED MODULE: ./src/components/menu/menuItem.js
-function menuItem({ name, ingredient, price }) {
+const menuItem = ({ name, ingredient, price }) => {
   const $menuItem = document.createElement('div');
   $menuItem.setAttribute('class', 'd-flex flex-row justify-content-between px-5');
 
   const $itemNamenAndIngredient = document.createElement('div');
-  // $itemNamenAndIngredient.setAttribute("class", "d-flex flex-column");
 
   const $itemName = document.createElement('h4');
   $itemName.setAttribute('class', 'text-danger');
@@ -690,7 +680,7 @@ function menuItem({ name, ingredient, price }) {
   $menuItem.appendChild($itemPrice);
 
   return $menuItem;
-}
+};
 
 /* harmony default export */ const menu_menuItem = (menuItem);
 ;// CONCATENATED MODULE: ./src/components/menu/menuSection.js
@@ -867,8 +857,7 @@ const populateMenu = () => {
 
 
 
-
-function menu_renderMain() {
+const menu_renderMain = () => {
   if (document.getElementById('main') !== null) {
     document.getElementById('main').outerHTML = '';
     document.querySelector('footer').outerHTML = '';
@@ -877,7 +866,6 @@ function menu_renderMain() {
   $main.setAttribute('id', 'main');
   $main.setAttribute('class', 'px-4  main mx-2 menu');
 
-
   // create menu page
   const $menu = menu_populateMenu();
   $main.appendChild($menu);
@@ -885,13 +873,13 @@ function menu_renderMain() {
   const $content = document.getElementById('content');
   $content.setAttribute('class', 'bg-dark');
   $content.appendChild($main);
-}
+};
 
 
-function renderMenu() {
+const renderMenu = () => {
   menu_renderMain();
   footer();
-}
+};
 
 /* harmony default export */ const menu = (renderMenu);
 ;// CONCATENATED MODULE: ./src/functions/events.js
@@ -925,7 +913,7 @@ const events = {
 ;// CONCATENATED MODULE: ./src/components/shared/header.js
 
 
-function renderNav() {
+const renderNav = () => {
   const navItems = ['home', 'menu', 'contact'];
 
   const $ul = document.createElement('ul');
@@ -969,7 +957,7 @@ function renderNav() {
     const target = getEventTarget(event);
     functions_events.emit('currentPageChanged', target.innerHTML);
   };
-}
+};
 
 
 /* harmony default export */ const header = (renderNav);
@@ -1017,8 +1005,7 @@ var bootstrap_min_update = injectStylesIntoStyleTag_default()(bootstrap_min/* de
 
 
 
-
-function renderPage(currentPage) {
+const renderPage = (currentPage) => {
   switch (currentPage) {
     case 'home':
       home();
@@ -1032,7 +1019,7 @@ function renderPage(currentPage) {
     default:
       home();
   }
-}
+};
 
 functions_events.on('currentPageChanged', renderPage);
 

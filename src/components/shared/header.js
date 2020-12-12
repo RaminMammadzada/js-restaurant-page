@@ -1,6 +1,6 @@
 import events from '../../functions/events';
 
-function renderNav() {
+const renderNav = () => {
   const navItems = ['home', 'menu', 'contact'];
 
   const $ul = document.createElement('ul');
@@ -44,7 +44,7 @@ function renderNav() {
     const target = getEventTarget(event);
     events.emit('currentPageChanged', target.innerHTML);
   };
-}
+};
 
 
 export default renderNav;

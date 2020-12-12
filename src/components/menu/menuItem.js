@@ -1,9 +1,8 @@
-function menuItem({ name, ingredient, price }) {
+const menuItem = ({ name, ingredient, price }) => {
   const $menuItem = document.createElement('div');
   $menuItem.setAttribute('class', 'd-flex flex-row justify-content-between px-5');
 
   const $itemNamenAndIngredient = document.createElement('div');
-  // $itemNamenAndIngredient.setAttribute("class", "d-flex flex-column");
 
   const $itemName = document.createElement('h4');
   $itemName.setAttribute('class', 'text-danger');
@@ -24,6 +23,6 @@ function menuItem({ name, ingredient, price }) {
   $menuItem.appendChild($itemPrice);
 
   return $menuItem;
-}
+};
 
 export default menuItem;

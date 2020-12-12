@@ -4,10 +4,9 @@ import renderMenu from './pages/menu';
 import renderNav from './components/shared/header';
 import events from './functions/events';
 import './style/style.css';
-
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-function renderPage(currentPage) {
+const renderPage = (currentPage) => {
   switch (currentPage) {
     case 'home':
       renderHome();
@@ -21,7 +20,7 @@ function renderPage(currentPage) {
     default:
       renderHome();
   }
-}
+};
 
 events.on('currentPageChanged', renderPage);
 
