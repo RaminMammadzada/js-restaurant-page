@@ -6,7 +6,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --config webpack.config.js ",
-    "watch": "webpack --config webpack.config.js --watch"
+    "watch": "webpack --config webpack.config.js --watch",
+    "debug": "node --inspect --inspect-brk ./node_modules/webpack/bin/webpack.js",
+    "dev": "npm run webpack -- --mode development --watch",
+    "dev:debug": "npm run debug -- --mode development",
+    "debugIndex": "node --inspect --inspect-brk ./src/index.js"
   },
   "repository": {
     "type": "git",

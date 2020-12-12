@@ -40,4 +40,5 @@ module.exports = {
       jQuery: 'jquery',
     }),
   ],
+  mode: 'production'
 };
