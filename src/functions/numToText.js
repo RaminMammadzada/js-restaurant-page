@@ -1,13 +1,15 @@
 const numToText = (number) => {
-    if (number === 0){
-        return "First";
-    }
-    else if (number === 1) {
-        return "Second";
-    }
-    else if (number === 2) {
-        return "Third";
-    }
+  if (number === 0) {
+    return 'First';
+  }
+  if (number === 1) {
+    return 'Second';
+  }
+  if (number === 2) {
+    return 'Third';
+  }
+
+  return null;
 };
 
 export default numToText;
