@@ -9,7 +9,7 @@ Microverse JS Project #2 -> JS Restaurant Page
 
 In the project I created a simple restaurant website using JS6 and finished the following milestones:
 
-- [x] Miltestone 1 - Set up an HTML skeleton inside of dist/index.html with single <div id="content">
+- [x] Miltestone 1 - Set up an HTML skeleton inside of dist/index.html with single `<div id="content">` element.
 - [x] Miltestone 2 - Set the style, image file loaders with Webpack.
 - [x] Miltestone 3 - Create a bare-bones homepage for a restaurant with homepage, menu page and contact page.
 - [x] Miltestone 4 - Each module exports a function that creates element, adds the appropriate content and styles to that element and then appends it to the DOM.
