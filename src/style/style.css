@@ -31,7 +31,6 @@ h2 {
 }
 
 li:hover {
-    color: #37ff34;
     background: #ffffff;
 }
 
@@ -48,14 +47,11 @@ nav {
 }
 
 .main {
-    /* margin-top: 103px; */
     margin-bottom: 60px;
 }
 
 img{
-
     overflow: hidden;
-
     position: absolute;
     left: auto;
     top: auto;
@@ -84,3 +80,13 @@ html {
 /* .no-background-color {
     background-color: transparent;
 } */
+
+.menu {
+        margin-top: 70px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+}
+
+.bg-gray1 {
+    background-color: #494646
+}

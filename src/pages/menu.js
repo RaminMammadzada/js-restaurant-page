@@ -11,7 +11,7 @@ function renderMain() {
     }
     const $main = document.createElement("div");
     $main.setAttribute("id", "main");
-    $main.setAttribute("class", "px-4 bg-info main");
+    $main.setAttribute("class", "px-4  main mx-2 menu");
 
 
     // create menu page
@@ -19,6 +19,7 @@ function renderMain() {
     $main.appendChild($menu);
 
     const $content = document.getElementById("content");
+    $content.setAttribute("class", "bg-dark");
     $content.appendChild($main);
 }
 
